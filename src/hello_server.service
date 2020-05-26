@@ -1,0 +1,11 @@
+[Unit]
+Description=Python Demo Service
+
+[Service]
+ExecStart=/usr/local/bin/hello_server
+Restart=always
+Type=Simple
+User=root
+
+[Install]
+WantedBy=default.target
